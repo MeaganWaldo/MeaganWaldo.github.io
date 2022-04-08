@@ -1,0 +1,122 @@
+/* This handles the items within this container. */
+
+div.container2 {
+    height: 10em;
+    position:relative;
+    display: none;
+    /*margin: 10px;*/
+	height: 97.7vh;
+    width: 100%;
+	background-image:url("../Functions/Art/Chapter1/beginCave.png");
+}
+
+div.container2 p {
+	position:absolute;
+    margin: 0;
+    left: 50%;
+	padding-top: 50px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.characterbutton {
+    display: inline-block;
+}
+
+/* This is the character class. */
+.characters {
+    width: 100px;
+}
+.statcontainer {
+    position: relative;
+    width: 100%;
+    height:300px;
+  }
+/* This defines the character images. */
+.characters img {
+    float: left;
+    display:block;
+    margin-left: +20;
+    height: 300px;
+	width: auto;
+	padding-right: 50px;
+	padding-left: 50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+	/*background-image:url("../Functions/Art/Chapter1/titlePage.png");*/
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/* This handles the first character button. */
+div.buttonChar {
+    display: inline-block;
+    grid-template-columns: repeat(2,auto);
+   /* gap: 10px; */
+	padding-right: 50px;
+	padding-left: 50px;
+    width: 200px;
+    text-align: center;
+}
+.bgImage{
+	width: auto;
+	height: 600px;
+	width:700px;
+}
+
+.statsOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #111721;
+}
+
+.statcontainer:hover .statsOverlay {
+    opacity: 75%;
+}
+  
+.text {
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/*
+div.buttonChar2 {
+    display: inline-block;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+}
+
+div.buttonChar3 {
+    display: inline-block;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+}
+
+div.buttonChar4 {
+    display: inline-block;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+}
+*/
